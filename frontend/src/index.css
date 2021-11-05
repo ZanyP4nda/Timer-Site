@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gets rid of arrows on number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.main-container0 {
+    display: grid;
+    grid-template-rows: 39vh 100px 30vh 20vh;
+}
+
+.main-container1 {
+    display: grid;
+    grid-template-rows: 35vh 100px 30vh 20vh;
+}
+
+.timer-set-container {
+    grid-row: 2;
+}
+
+.timer-set {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 52px;
+    text-align: center;
+    margin-right: 10px;
+    width: 70px;
+}
+
+.timer-set:focus {
+    outline: rgba(255, 174, 0, 0.877) double 3px;
+}
+
+.timer-set--error {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 52px;
+    text-align: center;
+    margin-right: 10px;
+    width: 70px;
+    outline: rgba(255, 0, 0, 0.877) double 3px;
+}
+
+.timer-set-label {
+    margin-right: 30px;
+    font-size: 48px;
+}
+
+.timer-set-label--last {
+    font-size: 48px;
+}
+
+.btn-container {
+    margin-top: 100px;
+    grid-row: 3;
+    text-align: center;
+}
+
+.start-btn {
+    font-size: 42px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: rgb(31, 85, 31) double 8px;
+    background-color: rgb(86, 240, 86);
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: rgb(83, 214, 83);
+}
+
+.start-btn:active {
+    cursor: pointer;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.timer-container {
+    font-size: 104px;
+    grid-row: 2;
+}
+
+.stop-btn {
+    font-size: 42px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 25px;
+    margin-right: 150px;
+    border-radius: 15px;
+    border: none;
+    outline: rgb(92, 0, 0) double 8px;
+    background-color: red;
+}
+
+.stop-btn:hover {
+    cursor: pointer;
+    background-color: rgb(218, 2, 2);
+}
+
+.pause-btn {
+    font-size: 42px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: rgb(51, 51, 51) double 8px;
+    background-color: lightgrey;
+}
+
+.pause-btn:hover {
+    cursor: pointer;
+    background-color: rgb(179, 179, 179);
+}
